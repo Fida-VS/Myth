@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #eee1ba;
+}
+h1{
+	font-family: 'Ruslan Display', cursive;
+	margin: 0;
+	padding-top: 2%;
+	font-size: 400%;
+}
+h2{
+	font-family: 'Ruslan Display', cursive;
+	margin: 0.5em;
+	margin-top: 1em;
+	font-size: 2em;
+}
+p{
+	font-family: "Bookman Old Style", "Arial Black", Times;
+	font-size: 1em;
+	font-weight: 400;
+	text-indent: 2em;
+}
+p:first-letter {
+	font-family: 'Ruslan Display', cursive;
+	font-weight: bold;
+	font-size: 2.4em;
+    color: #d20000;
+                       }     
+#header{
+	background: #dcc273;
+	width: 120vh;
+	min-width: 55%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+}
+#FlexMain{
+	background: rgba(255, 255, 255, .2);
+	background: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(255, 255, 255, .2) 1%, rgba(0, 0, 0, .1) 49%, rgba(0, 0, 0, .3), rgba(0, 0, 0, .1) 51%, rgba(255, 255, 255, .2) 99%, rgba(0, 0, 0, .1));
+	width: 120vh;
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 55%;
+}
+.first{
+	background: linear-gradient(to right, rgba(255, 255, 255, .05), rgba(255, 255, 255, .3), rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
+	flex: 1 1 45%;
+	margin: 0 3vh 0 3vh;
+	text-align:justify;
+}
+.foto{
+	float: left;
+	padding-right: 3%;
+	padding-bottom: 1%; 
+    
+}
+.second{
+	background: linear-gradient(to right, rgba(255, 255, 255, .05), rgba(255, 255, 255, .3), rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
+	flex: 1 1 45%;
+	margin: 0 3vh 0 3vh;
+	text-align:justify;
+}
+img{
+	width: 33vh;
+	min-width: 55%;
+}
+.solo{
+	margin-bottom: 5vh;
+}
+@media screen and (orientation:portrait){
+	#FlexMain{
+    background: rgba(255, 255, 255, .2);
+	background: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(255, 255, 255, .2) 1%, rgba(255, 255, 255, .2) 99%, rgba(0, 0, 0, .1));
+	display: flex;
+	flex-flow: column nowrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90vw;
+	}
+	#header{
+		width: 90vw;
+    }
+    h1{
+      font-size: 300%;
+    }
+}
